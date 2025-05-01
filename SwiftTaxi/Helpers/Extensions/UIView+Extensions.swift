@@ -5,20 +5,49 @@
 //  Created by Priya Gnaneshwaran on 18/04/25.
 //
 
+import Foundation
+import UIKit
 
-class TextField: UITextField {
-
-    let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-
-    override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+extension UIView {
+    
+    var width:  CGFloat { return self.frame.size.width }
+    var height: CGFloat { return self.frame.size.height }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        } set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
     }
-
-    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        } set {
+            layer.borderWidth = newValue
+            layer.masksToBounds = newValue > 0
+        }
     }
-
-    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+    
+    @IBInspectable var borderColor: UIColor {
+        get {
+            return UIColor.init(cgColor: layer.borderColor!)
+        } set {
+            layer.borderColor = newValue.cgColor
+        }
+    }
+    
+    func setWidth(width:CGFloat) {
+        var frame:CGRect = self.frame
+        frame.size.width = width
+        self.frame = frame
+    }
+    
+    func setHeight(height:CGFloat) {
+        var frame:CGRect = self.frame
+        frame.size.height = height
+        self.frame = frame
     }
 }

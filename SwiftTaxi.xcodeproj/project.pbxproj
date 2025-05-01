@@ -6,36 +6,58 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		204F7D262DB13DC600EB7A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204F7D1D2DB13DC600EB7A30 /* Assets.xcassets */; };
+		204F7D282DB13DC600EB7A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204F7D202DB13DC600EB7A30 /* LaunchScreen.storyboard */; };
+		204F7D292DB13DC600EB7A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204F7D222DB13DC600EB7A30 /* Main.storyboard */; };
+		204F7D2A2DB13DC600EB7A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F7D1C2DB13DC600EB7A30 /* AppDelegate.swift */; };
+		204F7D2B2DB13DC600EB7A30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F7D232DB13DC600EB7A30 /* SceneDelegate.swift */; };
+		204F7D2C2DB13DC600EB7A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F7D242DB13DC600EB7A30 /* ViewController.swift */; };
+		204F7D342DB13E1700EB7A30 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 204F7D332DB13E1700EB7A30 /* GoogleMaps */; };
+		204F7D362DB13E3C00EB7A30 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F7D352DB13E3C00EB7A30 /* Driver.swift */; };
+		204F7D382DB13E5700EB7A30 /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F7D372DB13E5700EB7A30 /* DriverViewModel.swift */; };
+		204F7D3C2DB13E7400EB7A30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F7D3B2DB13E7400EB7A30 /* HomeViewController.swift */; };
+		20B2BFF02DB15C8F0064A059 /* BookingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2BFEF2DB15C8F0064A059 /* BookingRequest.swift */; };
+		20B2BFF42DB15D3C0064A059 /* BookingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B2BFF32DB15D3C0064A059 /* BookingFormViewController.swift */; };
+		20C7BC422DB21C5000C99AE4 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7BC412DB21C4700C99AE4 /* UITextField+Extensions.swift */; };
+		20C7BC442DB21E7700C99AE4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7BC432DB21E7700C99AE4 /* UIView+Extensions.swift */; };
+		20C7BC462DB2334300C99AE4 /* SuccessPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7BC452DB2334300C99AE4 /* SuccessPopupViewController.swift */; };
+		20C7BC482DB236DB00C99AE4 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C7BC472DB236DB00C99AE4 /* CustomPresentationController.swift */; };
+		20EACB272DB1607E004E73A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACB262DB1607A004E73A3 /* Constants.swift */; };
+		C70B6410784A3612A134D2FB /* Pods_SwiftTaxi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00442D42794C930C6E3A2022 /* Pods_SwiftTaxi.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		00442D42794C930C6E3A2022 /* Pods_SwiftTaxi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftTaxi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		204F7D042DB13DAE00EB7A30 /* SwiftTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		204F7D1C2DB13DC600EB7A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		204F7D1D2DB13DC600EB7A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		204F7D1E2DB13DC600EB7A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204F7D1F2DB13DC600EB7A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		204F7D212DB13DC600EB7A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		204F7D232DB13DC600EB7A30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		204F7D242DB13DC600EB7A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		204F7D352DB13E3C00EB7A30 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		204F7D372DB13E5700EB7A30 /* DriverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
+		204F7D3B2DB13E7400EB7A30 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20B2BFEF2DB15C8F0064A059 /* BookingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRequest.swift; sourceTree = "<group>"; };
+		20B2BFF32DB15D3C0064A059 /* BookingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingFormViewController.swift; sourceTree = "<group>"; };
+		20C7BC412DB21C4700C99AE4 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		20C7BC432DB21E7700C99AE4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		20C7BC452DB2334300C99AE4 /* SuccessPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPopupViewController.swift; sourceTree = "<group>"; };
+		20C7BC472DB236DB00C99AE4 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		20EACB262DB1607A004E73A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFE95FA2D8601C48D2AC2CC9 /* Pods-SwiftTaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTaxi.release.xcconfig"; path = "Target Support Files/Pods-SwiftTaxi/Pods-SwiftTaxi.release.xcconfig"; sourceTree = "<group>"; };
+		DA6123EE3CC267D50FD32CE1 /* Pods-SwiftTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTaxi.debug.xcconfig"; path = "Target Support Files/Pods-SwiftTaxi/Pods-SwiftTaxi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		204F7D162DB13DB000EB7A30 /* Exceptions for "SwiftTaxi" folder in "SwiftTaxi" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 204F7D032DB13DAE00EB7A30 /* SwiftTaxi */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		204F7D062DB13DAE00EB7A30 /* SwiftTaxi */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				204F7D162DB13DB000EB7A30 /* Exceptions for "SwiftTaxi" folder in "SwiftTaxi" target */,
-			);
-			path = SwiftTaxi;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		204F7D012DB13DAE00EB7A30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204F7D342DB13E1700EB7A30 /* GoogleMaps in Frameworks */,
+				C70B6410784A3612A134D2FB /* Pods_SwiftTaxi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +67,10 @@
 		204F7CFB2DB13DAE00EB7A30 = {
 			isa = PBXGroup;
 			children = (
-				204F7D062DB13DAE00EB7A30 /* SwiftTaxi */,
+				204F7D252DB13DC600EB7A30 /* SwiftTaxi */,
 				204F7D052DB13DAE00EB7A30 /* Products */,
+				46A02EFDB7EB064BFC8D82E6 /* Pods */,
+				56AC54D62F1DC304DC35932C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +82,111 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		204F7D252DB13DC600EB7A30 /* SwiftTaxi */ = {
+			isa = PBXGroup;
+			children = (
+				204F7D1C2DB13DC600EB7A30 /* AppDelegate.swift */,
+				204F7D1D2DB13DC600EB7A30 /* Assets.xcassets */,
+				204F7D1E2DB13DC600EB7A30 /* Info.plist */,
+				204F7D2D2DB13DCB00EB7A30 /* Module */,
+				20C7BC3E2DB21C2000C99AE4 /* Helpers */,
+				20EACB242DB1601C004E73A3 /* StoryBoards */,
+				204F7D202DB13DC600EB7A30 /* LaunchScreen.storyboard */,
+				204F7D232DB13DC600EB7A30 /* SceneDelegate.swift */,
+				204F7D242DB13DC600EB7A30 /* ViewController.swift */,
+			);
+			path = SwiftTaxi;
+			sourceTree = "<group>";
+		};
+		204F7D2D2DB13DCB00EB7A30 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				204F7D2F2DB13DD500EB7A30 /* Model */,
+				204F7D2E2DB13DD100EB7A30 /* View */,
+				204F7D312DB13E0000EB7A30 /* ViewModel */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		204F7D2E2DB13DD100EB7A30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				204F7D3B2DB13E7400EB7A30 /* HomeViewController.swift */,
+				20B2BFF32DB15D3C0064A059 /* BookingFormViewController.swift */,
+				20C7BC452DB2334300C99AE4 /* SuccessPopupViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		204F7D2F2DB13DD500EB7A30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				204F7D352DB13E3C00EB7A30 /* Driver.swift */,
+				20B2BFEF2DB15C8F0064A059 /* BookingRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		204F7D312DB13E0000EB7A30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				204F7D372DB13E5700EB7A30 /* DriverViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20C7BC3E2DB21C2000C99AE4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				20C7BC402DB21C3B00C99AE4 /* Extensions */,
+				20EACB252DB1606A004E73A3 /* Resources */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		20C7BC402DB21C3B00C99AE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20C7BC412DB21C4700C99AE4 /* UITextField+Extensions.swift */,
+				20C7BC432DB21E7700C99AE4 /* UIView+Extensions.swift */,
+				20C7BC472DB236DB00C99AE4 /* CustomPresentationController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20EACB242DB1601C004E73A3 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				204F7D222DB13DC600EB7A30 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		20EACB252DB1606A004E73A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20EACB262DB1607A004E73A3 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46A02EFDB7EB064BFC8D82E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA6123EE3CC267D50FD32CE1 /* Pods-SwiftTaxi.debug.xcconfig */,
+				CFE95FA2D8601C48D2AC2CC9 /* Pods-SwiftTaxi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		56AC54D62F1DC304DC35932C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00442D42794C930C6E3A2022 /* Pods_SwiftTaxi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,19 +194,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 204F7D172DB13DB000EB7A30 /* Build configuration list for PBXNativeTarget "SwiftTaxi" */;
 			buildPhases = (
+				A8A94EA4776CD82F6F52BFE8 /* [CP] Check Pods Manifest.lock */,
 				204F7D002DB13DAE00EB7A30 /* Sources */,
 				204F7D012DB13DAE00EB7A30 /* Frameworks */,
 				204F7D022DB13DAE00EB7A30 /* Resources */,
+				DDEA88DB542E6EE96BFB5460 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				204F7D062DB13DAE00EB7A30 /* SwiftTaxi */,
-			);
 			name = SwiftTaxi;
 			packageProductDependencies = (
+				204F7D332DB13E1700EB7A30 /* GoogleMaps */,
 			);
 			productName = SwiftTaxi;
 			productReference = 204F7D042DB13DAE00EB7A30 /* SwiftTaxi.app */;
@@ -107,6 +236,9 @@
 			);
 			mainGroup = 204F7CFB2DB13DAE00EB7A30;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				204F7D322DB13E1700EB7A30 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 204F7D052DB13DAE00EB7A30 /* Products */;
 			projectDirPath = "";
@@ -122,30 +254,109 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204F7D262DB13DC600EB7A30 /* Assets.xcassets in Resources */,
+				204F7D282DB13DC600EB7A30 /* LaunchScreen.storyboard in Resources */,
+				204F7D292DB13DC600EB7A30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8A94EA4776CD82F6F52BFE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftTaxi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDEA88DB542E6EE96BFB5460 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTaxi/Pods-SwiftTaxi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftTaxi/Pods-SwiftTaxi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftTaxi/Pods-SwiftTaxi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		204F7D002DB13DAE00EB7A30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C7BC482DB236DB00C99AE4 /* CustomPresentationController.swift in Sources */,
+				20C7BC422DB21C5000C99AE4 /* UITextField+Extensions.swift in Sources */,
+				204F7D382DB13E5700EB7A30 /* DriverViewModel.swift in Sources */,
+				20B2BFF02DB15C8F0064A059 /* BookingRequest.swift in Sources */,
+				20C7BC442DB21E7700C99AE4 /* UIView+Extensions.swift in Sources */,
+				204F7D2A2DB13DC600EB7A30 /* AppDelegate.swift in Sources */,
+				204F7D2B2DB13DC600EB7A30 /* SceneDelegate.swift in Sources */,
+				20B2BFF42DB15D3C0064A059 /* BookingFormViewController.swift in Sources */,
+				20EACB272DB1607E004E73A3 /* Constants.swift in Sources */,
+				204F7D2C2DB13DC600EB7A30 /* ViewController.swift in Sources */,
+				204F7D3C2DB13E7400EB7A30 /* HomeViewController.swift in Sources */,
+				20C7BC462DB2334300C99AE4 /* SuccessPopupViewController.swift in Sources */,
+				204F7D362DB13E3C00EB7A30 /* Driver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		204F7D202DB13DC600EB7A30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204F7D1F2DB13DC600EB7A30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		204F7D222DB13DC600EB7A30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				204F7D212DB13DC600EB7A30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		204F7D182DB13DB000EB7A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6123EE3CC267D50FD32CE1 /* Pods-SwiftTaxi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22Y3C7V395;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftTaxi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -168,12 +379,14 @@
 		};
 		204F7D192DB13DB000EB7A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE95FA2D8601C48D2AC2CC9 /* Pods-SwiftTaxi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22Y3C7V395;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftTaxi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,6 +548,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		204F7D322DB13E1700EB7A30 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		204F7D332DB13E1700EB7A30 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 204F7D322DB13E1700EB7A30 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 204F7CFC2DB13DAE00EB7A30 /* Project object */;
 }

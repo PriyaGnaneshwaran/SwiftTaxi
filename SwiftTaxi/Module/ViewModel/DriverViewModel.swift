@@ -1,42 +1,44 @@
 //
 //  DriverViewModel.swift
-//  SwiftTaxi
-//
-//  Created by Priya Gnaneshwaran on 17/04/25.
-//
-
-
-//
-//  DriverViewModel.swift
 //  SwiftRide
 //
 //  Created by Priya Gnaneshwaran on 17/04/25.
 //
 
 import CoreLocation
+import UIKit
 
 class DriverViewModel {
-    let drivers: [Driver] = [
+    var drivers: [Driver] = [
         Driver(name: "Driver A", latitude: 13.068500, longitude: 80.234938),
         Driver(name: "Driver B", latitude: 13.062306, longitude: 80.231172),
-        Driver(name: "Driver C", latitude: 13.071086, longitude: 80.230709)
+        Driver(name: "Driver C", latitude: 13.071086, longitude: 80.230709),
+        Driver(name: "Driver D", latitude: 9.9228334, longitude: 78.0970979),
+        Driver(name: "Driver E", latitude: 9.89322, longitude: 80.184961)
     ]
     
-    var nearestDriver: Driver?
     var isBookingAvailable: Bool = false
+    var nearestDriver: Driver?
 
     func findNearestDriver(userLocation: CLLocation) {
-        var nearestDistance = CLLocationDistance(Double.greatestFiniteMagnitude)
+        var closest: Driver?
+        var shortestDistance = CLLocationDistance(1000)
         
         for driver in drivers {
             let driverLocation = CLLocation(latitude: driver.latitude, longitude: driver.longitude)
             let distance = userLocation.distance(from: driverLocation)
-            
-            if distance < nearestDistance {
-                nearestDistance = distance
-                self.nearestDriver = driver
+            if distance <= shortestDistance {
+                closest = driver
+                shortestDistance = distance
             }
         }
-        self.isBookingAvailable = (nearestDistance <= 1000)
+        if let nearest = closest {
+            self.nearestDriver = nearest
+            self.isBookingAvailable = true
+        } else {
+            self.nearestDriver = nil
+            self.isBookingAvailable = false
+        }
     }
 }
+

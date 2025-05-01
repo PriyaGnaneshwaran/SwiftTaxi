@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     let viewModel = DriverViewModel()
+    let appConstants = AppConstant()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,19 +26,28 @@ class HomeViewController: UIViewController {
     
     func updateUI() {
         self.btnBookNow.isEnabled = true
-        self.btnBookNow.setTitle("Book Now", for: .normal)
+        self.btnBookNow.setTitle(appConstants.bookNow, for: .normal)
         self.btnBookNow.backgroundColor = .systemBlue
         self.btnBookNow.addTarget(self, action: #selector(actionBookNow) , for: .touchUpInside)
     }
     
     @objc func actionBookNow() {
-        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let nav = storyboard.instantiateViewController(withIdentifier: "BookingFormViewController") as? BookingFormViewController {
+            nav.selectedDriver = self.viewModel.nearestDriver
+            nav.modalTransitionStyle = .crossDissolve
+            nav.modalPresentationStyle = .overFullScreen
+            self.present(nav, animated: true)
+        }
     }
     
     func setupLocation() {
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        self.locationManager.delegate = self
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.startUpdatingLocation()
+        self.mapView.isMyLocationEnabled = true
+        self.mapView.settings.myLocationButton = true
+        self.mapView.settings.zoomGestures = true
     }
     
     func updateMap(_ location : CLLocation) {
@@ -50,13 +60,14 @@ class HomeViewController: UIViewController {
         let userMarker = GMSMarker()
         userMarker.position = location.coordinate
         userMarker.icon = GMSMarker.markerImage(with: .red)
-        userMarker.title = "You"
+        userMarker.title = appConstants.You
         userMarker.map = self.mapView
         
         for driver in viewModel.drivers {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: driver.latitude, longitude: driver.longitude)
             marker.title = driver.name
+//            marker.icon = UIImage(systemName: "car")
             marker.icon = GMSMarker.markerImage(with: .blue)
             marker.map = self.mapView
         }
@@ -68,14 +79,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: CLLocationManagerDelegate, GMSMapViewDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let currentLocation = locations.first {
+        if let currentLocation = locations.last {
             self.updateMap(currentLocation)
+            self.locationManager.stopUpdatingLocation()
         }
     }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            locationManager.startUpdatingLocation()
-        }
-    }
+//    func locationManager(_ manager: CLLocationManager, didFailWithError error: any Error) {
+//        <#code#>
+//    }
 }

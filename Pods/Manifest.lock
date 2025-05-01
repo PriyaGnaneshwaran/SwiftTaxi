@@ -1,0 +1,16 @@
+PODS:
+  - McPicker (3.0.0)
+
+DEPENDENCIES:
+  - McPicker
+
+SPEC REPOS:
+  trunk:
+    - McPicker
+
+SPEC CHECKSUMS:
+  McPicker: ba38be56a8194faa5249eca4226c364eed628044
+
+PODFILE CHECKSUM: c7f4541f04cb1c498d11d9d6f4aae521b6133cd0
+
+COCOAPODS: 1.16.2

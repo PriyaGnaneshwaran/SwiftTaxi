@@ -20,3 +20,9 @@ struct BookingRequest {
     let paymentType: PaymentType
     let bookingDate: Date
 }
+
+extension PaymentType {
+    init?(from input: String) {
+        self.init(from: input)
+    }
+}
